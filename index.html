@@ -2,11 +2,19 @@
 <html>
 
 <head>
+    <script>
+        var i = 0;
+        function buttonClick() {
+            i++
+            document.getElementById('inc').value = i
+        }
+    </script>
 </head>
 
 <body>
     <h1>Cat Clicker</h1>
-    <h3>Clicks</h3>
+    <button onclick="buttonClick();">Click Me</button>
+    <input type="text" id="inc" value="0"></input>
     <img src="cat.jpeg" />
 </body>
 
